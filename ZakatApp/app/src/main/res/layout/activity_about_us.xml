@@ -1,0 +1,52 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- res/menu/menu_about_us.xml -->
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/menu_home"
+            android:title="Home"/>
+    </menu>
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Name: Balqis Farhana binti Burhan"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="8dp"
+        android:text="Group: RCS2405B"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textMatricNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGroup"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="8dp"
+        android:text="Matric Number: 2021653054"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textProgramme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMatricNumber"
+        android:layout_marginTop="77dp"
+        android:text="Programme: CS240"
+        android:textSize="18sp" />
+</RelativeLayout>
