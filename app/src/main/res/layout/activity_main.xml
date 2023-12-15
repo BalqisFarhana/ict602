@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="40dip"
+        android:paddingTop="100dip"
+        android:paddingRight="40dip"
+        android:background="#FFFFFF"
+        >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight of Gold:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Enter weight (g)"
+            android:inputType="numberDecimal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="517dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of Gold:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FF000000" />
+
+            <RadioButton
+                android:id="@+id/keep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <RadioButton
+                android:id="@+id/wear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wear"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Gold Value:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/input3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Enter current gold value (g)"
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D4AF37"
+                android:text="Calculate"
+
+                />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#000000"
+                android:text="Reset" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Answer:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FF000000"
+                android:padding="20dp"/>
+
+
+            <TextView
+                android:id="@+id/output1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#03AC13"
+                android:padding="20dp"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</RelativeLayout>

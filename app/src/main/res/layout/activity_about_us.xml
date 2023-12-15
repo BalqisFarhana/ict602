@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF">
+
+    <!-- Your existing Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="About"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!-- Your existing ImageView -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="283dp"
+        android:layout_height="319dp"
+        android:layout_below="@id/about_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/balqis1" />
+
+    <!-- Your existing TextView -->
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:gravity="center"
+        android:text="Balqis Farhana binti Burhan \n 2021653054 \n CS240 \n RCS2405"
+        android:textColor="@color/my_light_primary"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <!-- New TextView for Copyright notice with autoLink attribute -->
+    <TextView
+        android:id="@+id/textCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="\n\n\n\nVisit our website: \n https://github.com/BalqisFarhana/ict602 \n\n\n\n\n\n\n\n\n\n© 2023 Balqis Kiut. All rights reserved. "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
